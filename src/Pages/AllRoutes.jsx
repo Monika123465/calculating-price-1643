@@ -10,7 +10,7 @@ import Skills from "./Skills"
 
 function AllRoutes(){
     return(
-        <Container>
+        <>
             <Routes>
                 <Route  path="/"  element={<ForIndividual/>}></Route>
                 <Route  path="/skills"  element={<Skills/>}></Route>
@@ -18,7 +18,7 @@ function AllRoutes(){
                 <Route  path="/signin"  element={<Signin/>}></Route>
                 <Route  path="/pluralsight"  element={<PluralSight/>}></Route>
             </Routes>
-        </Container>
+        </>
     )
 }
 
