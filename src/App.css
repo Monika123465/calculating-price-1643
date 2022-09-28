@@ -1,3 +1,7 @@
+.custom_button {
+  background: linear-gradient(145deg, #f05a28 0, #ec008c 100%) !important;
+}
+
 .App {
   text-align: center;
 }
