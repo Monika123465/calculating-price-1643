@@ -1,7 +1,30 @@
 .custom_button {
   background: linear-gradient(145deg, #f05a28 0, #ec008c 100%) !important;
+  width:40%;
+  display:block ;
+  margin-top:20px;
+  margin-bottom:12px;
+  
 }
+.custom_box {
+   background:  linear-gradient(30deg, rgba(126,6,78,0.75) 0%, rgba(32,32,32,1) 50%, rgba(234,42,94,1) 90%)!important;
+   Width:100%;
+  padding-top: 40px;
+  color: white;
+}
+.custom_Box {
+  background: linear-gradient(30deg,rgb(16,16,16)40%,rgb(87,19,38)70%) !important ;
+  width:75% ;  
+  margin:auto; padding-top:4rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+  border-radius:20px;
+}
+.custom_text{
+  margin-top:10px; margin-top: 10px;  text-align:left;
 
+}
+.custom_div{
+  background:  linear-gradient(145deg, #f05a28 0, #ec008c 100%) !important;
+}
 .App {
   text-align: center;
 }
