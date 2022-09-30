@@ -14,7 +14,7 @@ function AllRoutes(){
             <Routes>
                 <Route  path="/"  element={<ForIndividual/>}></Route>
                 <Route  path="/skills"  element={<Skills/>}></Route>
-                <Route  path="/Courses"  element={<Courses/>}></Route>
+                <Route  path="/courses"  element={<Courses/>}></Route>
                 <Route  path="/signin"  element={<Signin/>}></Route>
                 <Route  path="/pluralsight"  element={<PluralSight/>}></Route>
             </Routes>

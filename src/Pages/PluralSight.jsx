@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Button, Image, Grid, Container, Center, Divider } from "@chakra-ui/react"
 import { AiOutlineRight } from "react-icons/ai";
+import Courses from "./Courses";
 
 
 function PluralSight() {
@@ -199,6 +200,7 @@ function PluralSight() {
                     </Box>
                 </Box>
             </Container>
+
 
 
 
