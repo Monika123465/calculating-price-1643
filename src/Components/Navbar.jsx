@@ -3,8 +3,12 @@ import {
     Container, Box, Text, Image, Button
 } from "@chakra-ui/react"
 import { AiOutlineDown } from "react-icons/ai";
+import { useContext } from "react";
+import { authContext } from "../context/authContext";
 
 function Navbar() {
+    const { user, logout } = useContext(authContext)
+
     return (
         <>
             <Container
@@ -37,7 +41,9 @@ function Navbar() {
                         border="1px solid black"
                         gap='0.5rem'
                     ><Link to="/signin"><Image src='https://www.pluralsight.com/content/dam/ps-nav-assets/nav-profile-image.svg' alt='Dan Abramov'></Image></Link>
-                        <Link to="/signin"><Text>Signin</Text></Link><AiOutlineDown/>
+                        <Link to="/signin"><Text onClick={logout}>
+                            {user ? "logout" : "signin"}
+                        </Text></Link><AiOutlineDown />
 
                     </Box>
                 </Container>
@@ -75,7 +81,7 @@ function Navbar() {
                     <Image maxWidth="5%" height="40px" src='https://www.shutterstock.com/image-vector/white-magnifying-glass-icon-isolated-600w-1573346785.jpg' alt='error'></Image>
 
                     <Button color="white" width="140px" border="1px solid white" bg="black" borderRadius="none">Contact sales</Button>
-                    <Button color="white" width="140px" border="1px solid white"  borderRadius="none"  className="custom_button">Try for free</Button>
+                    <Button color="white" width="140px" border="1px solid white" borderRadius="none" className="custom_button">Try for free</Button>
 
 
 
