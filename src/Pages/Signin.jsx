@@ -43,10 +43,10 @@ function Signin() {
 
       <Box width="50%" box-shadow="rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" bg="black" padding="140px" >
         <Image margin="auto" width="50%" src="https://app.pluralsight.com/id/img/login-logo.png" />
-        <Text className='custom_text' marginTop="60px">Email or Username</Text>
-        <Input className='custom_text' username={username} onChange={(e) => setUsername(e.target.value)} />
+        <Text className='custom_text' marginTop="60px">Username</Text>
+        <Input className='custom_text' username={username} onChange={(e) => setUsername(e.target.value)} type="text" />
         <Text className='custom_text' marginTop="30px">Password</Text>
-        <Input value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Input value={password} onChange={(e) => setPassword(e.target.value)} type="password"/>
         <Button colorScheme="facebook" width="100%" marginTop="20px" onClick={handleLogin}>Sign in</Button>
 
         <Text color="#385898" marginTop="20px">Forget Password</Text>
