@@ -46,7 +46,7 @@ function Signin() {
         <Text className='custom_text' marginTop="60px">Email or Username</Text>
         <Input className='custom_text' username={username} onChange={(e) => setUsername(e.target.value)} />
         <Text className='custom_text' marginTop="30px">Password</Text>
-        <Input value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Input value={password} onChange={(e) => setPassword(e.target.value)} type="password" />
         <Button colorScheme="facebook" width="100%" marginTop="20px" onClick={handleLogin}>Sign in</Button>
 
         <Text color="#385898" marginTop="20px">Forget Password</Text>
